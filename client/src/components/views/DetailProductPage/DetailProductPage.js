@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Row, Col } from "antd";
+import Auth from "../../../hoc/auth";
 import ProductImage from "./Sections/ProductImage";
 import ProductInfo from "./Sections/ProductInfo";
 import { addToCart } from "../../../_actions/user_actions";

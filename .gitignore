@@ -1,5 +1,8 @@
 ./node_modules
+<<<<<<< HEAD
 
 node_modules
 node_modules
 npm-debug.log
+=======
+>>>>>>> 2d5984d22f5e3f01c12dffa69b6e05254b4e6f11
