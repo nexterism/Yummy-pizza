@@ -108,6 +108,7 @@ function CartPage(props) {
         margin: " auto",
         position: "relative",
         top: "150px",
+        overflowX: "hidden",
       }}
     >
       <h1>My Cart</h1>

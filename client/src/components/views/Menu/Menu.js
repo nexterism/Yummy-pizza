@@ -103,6 +103,7 @@ function LandingPage() {
         margin: "auto",
         position: "relative",
         top: "150px",
+        overflowX: "hidden",
       }}
     >
       <div

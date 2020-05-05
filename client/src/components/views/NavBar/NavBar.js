@@ -39,7 +39,7 @@ function NavBar() {
             <Icon type="align-right" />
           </Button>
           <Drawer
-            title="Basic Drawer"
+            title="Yummy Pizza"
             placement="right"
             className="menu_drawer"
             closable={false}
