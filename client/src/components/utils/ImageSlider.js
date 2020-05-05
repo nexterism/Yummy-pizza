@@ -25,3 +25,4 @@ function ImageSlider(props) {
 }
 
 export default ImageSlider;
+//http://localhost:5000/

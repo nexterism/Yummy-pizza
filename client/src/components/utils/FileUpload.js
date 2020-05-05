@@ -66,8 +66,9 @@ function FileUpload(props) {
         {Images.map((image, index) => (
           <div onClick={() => onDelete(image)}>
             <img
+              //http://localhost:5000/
               style={{ minWidth: "300px", width: "300px", height: "240px" }}
-              src={`http://localhost:5000/${image}`}
+              src={`https://nexterism-pizza.herokuapp.com/${image}`}
               alt={`productImg-${index}`}
             />
           </div>
