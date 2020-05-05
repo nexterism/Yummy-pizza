@@ -13,7 +13,7 @@ function ImageSlider(props) {
                   width: "200px",
                   height: "200px",
                 }}
-                src={`http://localhost:5000/${image}`}
+                src={`https://nexterism-pizza.herokuapp.com/${image}`}
                 alt="productImage"
               />
             </div>

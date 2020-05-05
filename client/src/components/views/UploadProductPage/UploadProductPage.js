@@ -26,9 +26,9 @@ function UploadProductPage(props) {
     setPriceValue(event.currentTarget.value);
   };
 
-  const onContinentsSelectChange = (event) => {
-    setContinentValue(event.currentTarget.value);
-  };
+  // const onContinentsSelectChange = (event) => {
+  //   setContinentValue(event.currentTarget.value);
+  // };
 
   const updateImages = (newImages) => {
     setImages(newImages);
