@@ -15,8 +15,8 @@ export default class Story extends Component {
               />
             </div>
             <div className="col-md-6 my-5 text-right">
-              <h1 className="text-danger">About Our Shop</h1>
-              <p className="py-3">
+              <h1 className="text-danger text-center">About Our Shop</h1>
+              <p className="py-3 text-center">
                 sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet
                 Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore
                 et consectetur adipiscing sed do eiusmod tempor incididunt ut

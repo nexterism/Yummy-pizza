@@ -29,10 +29,13 @@ body {
         color: white !important;
         h1 {
           font-size: 54px;
+          font-weight: bolder;
           color: white !important;
+         
         }
-        h5 {
-          font-size: 22px;
+        h4 {
+          font-size: 28px;
+          font-weight: bolder;
           letter-spacing: 3px;
           color: white !important;
         }
@@ -41,15 +44,16 @@ body {
 }
 
 
+
+
 .about {
-    height: 80vh;
-    .aboutImage {
-      height: 100%;
-      width: 100%;
-    }
-    
+  .aboutImage {
+    height: 100%;
+    width: 100%;
   }
+  
 }
+
 
 .ourCustomers {
     background-image: url(/images/blog-3-1000x400.jpg);
@@ -63,7 +67,7 @@ body {
     }
   }
 
-  .services {
+  .pizza {
     .row {
       .col-md-4 {
         i {
@@ -72,6 +76,8 @@ body {
       }
     }
   }
+
+  
   .footer {
     background-color: #000000 !important;
     h4{
@@ -81,4 +87,4 @@ body {
       font-size: 30px;
     }
   }
-
+}

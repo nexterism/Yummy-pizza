@@ -9,12 +9,7 @@ export default class header extends Component {
           <div className="inner">
             <div className="header-text text-center">
               <h1>Welcome to our Shop</h1>
-              <h5>Offering Yummy Pizza</h5>
-              {/* <p>
-                <br /> Lorem ipsum dolor sit amet Lorem ipsum dolor sit
-                ametLorem ipsum <br />
-                dolor sit amet Lorem ipsum dolor sit amet
-              </p> */}
+              <h4>Offering Yummy Pizza</h4>
             </div>
           </div>
         </div>

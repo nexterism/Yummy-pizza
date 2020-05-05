@@ -5,7 +5,7 @@ export default class Services extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="services text-center container py-5">
+        <div className="pizza text-center container py-5">
           <h1 className="text-danger">Our Pizza</h1>
           <div className="row">
             <div className="col-md-4">

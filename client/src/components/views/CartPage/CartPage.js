@@ -104,6 +104,7 @@ function CartPage(props) {
     <div
       style={{
         width: "85%",
+
         margin: " auto",
         position: "relative",
         top: "150px",
@@ -115,45 +116,58 @@ function CartPage(props) {
           products={props.user.cartDetail}
           removeItem={removeFromCart}
         />
-
-        {ShowTotal ? (
-          <div style={{ marginTop: "3rem" }}>
-            <h2>Subtotal amount: ${Total} </h2>
-            <h2>Delivery amount: ${5} </h2>
-            <hr
-              style={{ width: "25%", marginLeft: "0", textAlign: "left" }}
-            ></hr>
-            <h2>Total amount: ${Total + 5} </h2>
+        <div className="row">
+          <div className="col-md-4 my-5">
+            {ShowTotal ? (
+              <div style={{ marginTop: "3rem" }}>
+                <h2>Subtotal amount: ${Total} </h2>
+                <h2>Delivery amount: ${5} </h2>
+                <hr
+                  style={{ width: "25%", marginLeft: "0", textAlign: "left" }}
+                ></hr>
+                <h2>Total amount: ${Total + 5} </h2>
+              </div>
+            ) : ShowSuccess ? (
+              <Result status="success" title="Successfully Purchased Items" />
+            ) : (
+              <div
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <br />
+                <Empty description={false} />
+                <p>No Items In the Cart</p>
+              </div>
+            )}
           </div>
-        ) : ShowSuccess ? (
-          <Result status="success" title="Successfully Purchased Items" />
-        ) : (
-          <div
-            style={{
-              width: "100%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <br />
-            <Empty description={false} />
-            <p>No Items In the Cart</p>
+          <div className="col-md-8 my-5 text-center">
+            {ShowTotal && <DELIVERY />}
           </div>
-        )}
-        <DELIVERY />
+        </div>
       </div>
       {/* <button onClick={<Result />}>CheckOut</button> */}
       {/* Paypal Button */}
-
-      {ShowTotal && (
-        <Paypal
-          toPay={Total}
-          onSuccess={transactionSuccess}
-          transactionError={transactionError}
-          transactionCanceled={transactionCanceled}
-        />
-      )}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "-80px",
+          padding: "100px",
+        }}
+      >
+        {ShowTotal && (
+          <Paypal
+            toPay={Total}
+            onSuccess={transactionSuccess}
+            transactionError={transactionError}
+            transactionCanceled={transactionCanceled}
+          />
+        )}
+      </div>
     </div>
   );
 }

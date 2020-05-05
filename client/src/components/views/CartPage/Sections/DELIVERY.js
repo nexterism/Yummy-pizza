@@ -10,7 +10,7 @@ function DELIVERY(props) {
       span: 8,
     },
     wrapperCol: {
-      span: 12,
+      span: 14,
     },
   };
   const validateMessages = {
@@ -24,7 +24,7 @@ function DELIVERY(props) {
     },
   };
   const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
+    <Form.Item name="prefix" style={{ margin: "auto" }}>
       <Select
         style={{
           width: 70,
@@ -84,17 +84,17 @@ function DELIVERY(props) {
         ]}
       >
         <Input
-          style={{ padding: "0px 0px" }}
           addonBefore={prefixSelector}
           style={{
             width: "100%",
+            height: "50px",
           }}
         />
       </Form.Item>
 
       <Form.Item
-        name={["user", "introduction"]}
-        label="Intro"
+        name={["user", "address"]}
+        label="Address"
         rules={[
           {
             required: true,
@@ -109,6 +109,7 @@ function DELIVERY(props) {
 
   return (
     <div>
+      <h2>Delivery Address</h2>
       <div>{renderItems()}</div>
     </div>
   );
