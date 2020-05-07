@@ -91,7 +91,10 @@ function RegisterPage(props) {
           handleReset,
         } = props;
         return (
-          <div className="app">
+          <div
+            className="app"
+            style={{ margin: "auto", position: "relative", top: "100px" }}
+          >
             <h2>Sign up</h2>
             <Form
               style={{ minWidth: "375px" }}

@@ -8,7 +8,7 @@ import "./Sections/Menu.css";
 
 const { Meta } = Card;
 
-function LandingPage() {
+function Menu() {
   const [Products, setProducts] = useState([]);
   const [Skip, setSkip] = useState(0);
   const [Limit, setLimit] = useState(8);
@@ -159,4 +159,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default Menu;
